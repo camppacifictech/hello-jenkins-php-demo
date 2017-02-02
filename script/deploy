@@ -1,0 +1,7 @@
+#!/bin/sh
+
+ssh -p 20411 app@cpdev2 <<EOF
+   cd /var/www/hello/trunk/
+   git pull
+   exit
+EOF
