@@ -3,9 +3,5 @@
 ssh -p 20411 app@cpdev2 <<EOF
    cd /var/www/hello/trunk/
    git pull
-   service nginx restart
-   service php5-fpm restart
-   service varnish restart
-   service pound restart 
    exit
 EOF
